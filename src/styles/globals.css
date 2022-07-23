@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: @apply text-gray-200;
+}
+
+html {
+  @apply h-full;
+  background-color: black;
+  color: white;
+}
+
+body {
+  @apply min-h-full;
+  @apply text-gray-700;
+}
+
+#__next {
+  @apply flex;
+  @apply flex-col;
+  @apply min-h-screen;
+}
+
+
+@layer components {
+  .outline-redbo:focus {
+    @apply outline;
+    @apply outline-active;
+    @apply outline-offset-0;
+  }
+}

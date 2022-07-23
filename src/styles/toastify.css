@@ -1,0 +1,86 @@
+@import 'react-toastify/dist/ReactToastify.css';
+
+.Toastify__toast {
+  @apply font-sans;
+  @apply rounded;
+  @apply items-center;
+  @apply font-medium;
+  @apply py-4;
+  @apply px-6;
+  @apply text-sm; 
+  @apply flex;
+  @apply leading-tight;
+  @apply shadow-2xl;
+  min-height: 54px;
+}
+
+.Toastify__toast-body > .Banner {
+  @apply -my-4;
+  @apply -mx-6;
+  @apply border-0;
+  @apply pr-10;
+  @apply text-sm;
+}
+
+.Toastify__toast--success, 
+.Toastify__toast-body > .Banner--success {
+  @apply bg-green-200;
+  @apply text-green-600;
+}
+.Toastify__toast--error, 
+.Toastify__toast-body > .Banner--danger {
+  @apply bg-red-200;
+  @apply text-red-600; 
+}
+.Toastify__toast--info, 
+.Toastify__toast-body > .Banner--info {
+  @apply bg-light;
+  @apply text-main-color;
+}
+.Toastify__toast--warning {
+  @apply bg-yellow-100;
+  @apply text-yellow-600; 
+}
+
+.Toastify__close-button {
+  @apply absolute;
+  @apply inset-y-0;
+  @apply right-0;
+  @apply px-3;
+}
+.Toastify__close-button--success {
+  @apply text-green-600;
+}
+.Toastify__close-button--error {
+  @apply text-red-600;
+}
+.Toastify__close-button--info {
+  @apply text-main-color;
+}
+.Toastify__close-button--warning {
+  @apply text-yellow-600;
+}
+.Toastify__close-button:hover, 
+.Toastify__close-button:focus {
+  outline: none;
+}
+
+.Toastify__progress-bar {
+  /* Hide progress to avoid stress. Display: none doesn't work well here. */
+  opacity: 0!important;
+}
+.Toastify__progress-bar--success {
+  @apply bg-green-600;
+}
+.Toastify__progress-bar--error {
+  @apply bg-red-600;
+}
+.Toastify__progress-bar--warning {
+  @apply bg-yellow-600;
+}
+.Toastify__progress-bar--info {
+  @apply bg-main-color;
+}
+.Toastify__progress-bar--default {
+  background: rgba(0, 0, 0, 0.5);
+}
